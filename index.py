@@ -3,7 +3,7 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 from layouts import layout1, layout2, layout3
 from app import app
-import callbacks
+
 
 app.layout = html.Div([
     dcc.Location(id='url', refresh=False),

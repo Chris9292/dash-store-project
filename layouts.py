@@ -1,6 +1,6 @@
 import dash_core_components as dcc
 import dash_html_components as html
-from utils import fetch_customer_name
+from database import fetch_customer_name
 
 layout1 = html.Div(id='container', children=[
     html.Div(id='header',
