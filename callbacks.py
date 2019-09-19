@@ -21,7 +21,6 @@ current_customer = [None]
     [Input("table_selector_dropdown", 'value')]
 )
 def create_datatable(table_name):
-    print(f'show table: {table_name}')
 
     # create table
     if not table_name:
@@ -35,9 +34,7 @@ def create_datatable(table_name):
             df['date'] = df['date'].map(lambda x: str(x).strip('T')[:-3])
             df.sort_values(by='id', ascending=False, inplace=True)
         elif table_name == 'OrderItem':
-            df.sort_values(by='id', ascending=False, inplace=True)    
-        elif table_name == 'Product':
-            df.drop(columns=['image'], inplace=True)
+            df.sort_values(by='id', ascending=False, inplace=True)
 
         data_table = utils.create_custom_datatable(df)
         return [data_table]

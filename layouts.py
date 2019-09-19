@@ -1,6 +1,7 @@
 import dash_core_components as dcc
 import dash_html_components as html
 from database import fetch_customer_name
+import callbacks
 
 layout1 = html.Div(id='container', children=[
     html.Div(id='header',

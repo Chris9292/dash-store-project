@@ -1,6 +1,6 @@
 import psycopg2
 import pandas as pd
-from SQLalchemy import create_engine
+from sqlalchemy import create_engine
 
 username = 'postgres'
 password = 'Chr!$t0tk'
@@ -30,7 +30,6 @@ def execute_query(query):
     # close communication with the database
     cursor.close()
     con.close()
-    print('Successfully executed query!')
     return result
 
 

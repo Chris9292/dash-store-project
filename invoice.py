@@ -3,7 +3,7 @@ from database import execute_query
 
 # function that modifies existing invoice template
 def invoice(order_id):
-    wb = openpyxl.load_workbook("prototype.xlsx", read_only=False)
+    wb = openpyxl.load_workbook("templates/prototype.xlsx", read_only=False)
     sheet = wb.get_sheet_by_name("Invoice")
 
     # fetch data from database (id, customer_id, date, total)
