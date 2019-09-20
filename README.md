@@ -45,6 +45,7 @@ Functionalities of this app:
 
 ### The structure of the database:
 ![database structure](db/database_structure_dbeaver.png)
+
 ![database structure](db/database_structure_omnidb.png)
 
 
