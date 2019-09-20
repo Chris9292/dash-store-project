@@ -5,14 +5,15 @@ from sqlalchemy import create_engine
 username = 'postgres'
 password = 'Chr!$t0tk'
 database = 'store'
+port = 5432 # default
 
 # create engine for pd.to_sql() function
-engine = create_engine(f'postgresql://{username}:{password}@localhost:5432/{database}')
+engine = create_engine(f'postgresql://{username}:{password}@localhost:{port}/{database}')
 
 def execute_query(query):
     result = []
     # connect to database
-    con = psycopg2.connect(dbname=database, host='localhost', user=username, password=password)
+    con = psycopg2.connect(dbname=database, host='localhost', user=username, password=password, port=port)
 
     # create cursor object
     cursor = con.cursor()
