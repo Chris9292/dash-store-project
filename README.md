@@ -44,10 +44,9 @@ Functionalities of this app:
 ## Documentation
 
 ### The structure of the database:
-![database structure](db/database_structure_dbeaver.png)
-![database structure](db/database_structure_omnidb.png)
+![database structure](https://github.com/Chris9292/dash-store-project/tree/master/images/database_structure_dbeaver.png)
+![database structure](https://github.com/Chris9292/dash-store-project/tree/master/images/database_structure_imni_db.png)
 
 
 ### template used for invoice:
 ![invoice](templates/invoice.png)
-
