@@ -1,4 +1,6 @@
 # dash-store-project
+## Description
+
 web app based on dash framework which manages orders and creates invoices in xlsx format
 
 This program:
@@ -8,7 +10,7 @@ This program:
 - reduce the risk of human error through automation
 
 Functionalities of this app:
-- view tables of database (filtering enabled)
+- view tables (filtering enabled)
 - create orders and prepare ready for print invoice
 - add product/customer
 
@@ -32,26 +34,33 @@ Functionalities of this app:
 ![database structure_2](images/database_structure_omni_db.png)
 
 
-### Template used for invoice:
-![invoice](templates/invoice.png)
-
 ## App presentation
 
-Table Viewer:
+- Table Viewer:
 
-![product](images/product.png)
-![customer](images/customer.png)
+<p align="center">
+    <img src="images/product.png" alt="Image"/>
+</p>
 
-order example:
+<p align="center">
+    <img src="images/customer.png" alt="Image"/>
+</p>
 
-![order](images/order.png)
+- order example:
 
-clicking save adds order to database and creates xlsx file in invoice folder with corresponding order_id (INVOICE#):
+<p align="center">
+    <img src="images/order.png" alt="Image"/>
+</p>
 
-![invoice](images/example_invoice.png)
+- clicking save adds order to database and creates xlsx file in invoice folder with corresponding order_id (INVOICE#):
 
-check order in database:
+<p align="center">
+    <img src="images/example_invoice.png" alt="Image"/>
+</p>
 
-![order_items](images/order_item.png)
+- check order in database:
+<p align="center">
+    <img src="images/order_item.png" alt="Image"/>
+</p>
 
 
